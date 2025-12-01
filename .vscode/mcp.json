@@ -1,0 +1,18 @@
+{
+  "servers": {
+    "calculator-STDIO": {
+      "command": "python",
+      "args": ["./scenario-1/fastmcp-calculator.py"]
+    },
+
+    "calculator-HTTP": {
+      "command": "npx",
+      "args": ["mcp-remote", "http://localhost:8001/mcp"]
+    },
+
+    "freecodecamp-search-HTTP": {
+      "command": "python",
+      "args": ["./scenario-3/feed_search_mcp.py"]
+    }
+  } 
+}
