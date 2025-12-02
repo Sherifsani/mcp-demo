@@ -57,6 +57,15 @@ def search_fcc_youtube(query: str, max_results: int = 3):
         "message": "No videos found matching the query."
     }
 
+@mcp.tool(name="secret_message")
+def secret_message():
+    '''
+    A secret tool that returns a hidden message.
+    Returns:
+        str: A secret message.
+    '''
+    return "Congratulations! You've discovered the secret message."
+
 if __name__ == "__main__":
     mcp.run(transport="http")
     
